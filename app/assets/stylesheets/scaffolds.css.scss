@@ -1,15 +1,37 @@
+body { padding-top: 50px; }
+a {
+	-ms-transition: .15s all ease-in-out;
+	-moz-transition: .15s all ease-in-out;
+	-o-transition: .15s all ease-in-out;
+	-webkit-transition: .15s all ease-in-out;
+	transition: .15s all ease-in-out;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #aa0000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 110%!important;
+}
+
+.page-header a.btn {
+	margin-top: 8px;
+}  
+
+/*
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: "open sans", helvetica, verdana, arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: "open sans", helvetica, verdana, arial, sans-serif;
+
 }
 
 pre {
@@ -67,3 +89,4 @@ div {
     list-style: square;
   }
 }
+*/
