@@ -16,12 +16,6 @@ class StatusesControllerTest < ActionController::TestCase
     assert_response :redirect
     assert_redirected_to new_user_session_path
   end
-  
-  test "should render the new page when loggin in" do
-  	sign_in users(:jason)
-  	get :new
-  	assert_response :success
-  end 
 
   test "should render the new page when logged in" do
     sign_in users(:jason)
