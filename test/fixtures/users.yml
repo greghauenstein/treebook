@@ -1,6 +1,5 @@
-greg:
- first_name: "Gregory"
- last_name: "Hauenstein"
- profile_name: "greg"
- email: "greghauenstein@gmail.com"
- encrypted_password: "shoepillow"
+jason:
+  first_name: "Jason"
+  last_name: "Seifer"
+  email: "jason@teamtreehouse.com"
+  profile_name: "jasonseifer"
