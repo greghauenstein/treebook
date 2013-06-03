@@ -7,14 +7,21 @@
 
 <% @statuses.each do |status| %>
 	<div class="status">
-		<h3><%= status.user.full_name %></h3>
-		<p><%= status.content %></p>
-		<div class="meta">
-			<%= link_to time_ago_in_words(status.created_at) + " ago", status %> 
-			<span class="admin">
-				| <%= link_to "Edit", edit_status_path(status) %> | 
-				<%= link_to "Delete", status, method: :delete, data: { confirm: "Oh snap. Ya sure?"} %>
-			</span>
-		</div>
+		<div class="row">
+			<div class="span2">
+				<%= image_tag status.user.gravatar_url, class: "img-polaroid" %>
+			</div>
+			<div class="span6">
+				<h3><%= status.user.full_name %></h3>
+				<p><%= status.content %></p>
+				<div class="meta">
+					<%= link_to time_ago_in_words(status.created_at) + " ago", status %> 
+					<span class="admin">
+						| <%= link_to "Edit", edit_status_path(status) %> | 
+						<%= link_to "Delete", status, method: :delete, data: { confirm: "Oh snap. Ya sure?"} %>
+					</span>
+				</div>
+			</div><!-- close .span8 -->
+		</div><!-- close .row -->
 	</div>
 <% end %>
