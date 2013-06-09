@@ -10,6 +10,10 @@ gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails'
 
+group :test do
+	gem 'shoulda'
+end
+
 group :development, :test do
 	gem 'sqlite3'
 end
